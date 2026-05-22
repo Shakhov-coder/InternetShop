@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товар - ***</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
+        header, nav, footer { background: #fff; }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+        .logo { font-size: 24px; font-weight: bold; color: #e44d26; }
+        nav { background: #333; }
+        nav ul { display: flex; list-style: none; justify-content: center; }
+        nav ul li a { color: #fff; text-decoration: none; padding: 12px 20px; display: block; }
+        .product-detail { display: flex; gap: 30px; margin: 30px 0; background: #fff; padding: 20px; border-radius: 10px; }
+        .product-image { flex: 1; }
+        .product-image img { width: 100%; max-width: 400px; }
+        .product-info { flex: 1; }
+        .price { font-size: 32px; color: #e44d26; margin: 15px 0; }
+        .quantity { width: 60px; padding: 5px; margin: 10px 0; }
+        .btn-buy { background: #e44d26; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-right: 10px; }
+        footer { background: #333; color: #fff; text-align: center; padding: 20px; margin-top: 30px; }
+        @media (max-width: 768px) { .product-detail { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <div class="logo">🛒 ***Store</div>
+            <div class="cart-icon">Корзина (0)</div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="product.html">Каталог</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="product-detail">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/400" alt="Товар">
+            </div>
+            <div class="product-info">
+                <h1>***</h1>
+                <p>Описание товара</p>
+                <div class="price">*** ₽</div>
+                <label>Количество:</label>
+                <input type="number" class="quantity" value="1" min="1">
+                <div style="margin-top: 20px;">
+                    <button class="btn-buy" onclick="alert('Товар добавлен в корзину')">Купить сейчас</button>
+                    <button class="btn-buy" onclick="alert('Товар добавлен в корзину')">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 ***Store. Все права защищены.</p>
+    </footer>
+</body>
+</html>

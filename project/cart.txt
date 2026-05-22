@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; background: #fff; }
+        .logo { font-size: 24px; font-weight: bold; color: #e44d26; }
+        nav { background: #333; }
+        nav ul { display: flex; list-style: none; justify-content: center; }
+        nav ul li a { color: #fff; text-decoration: none; padding: 12px 20px; display: block; }
+        table { width: 100%; background: #fff; border-collapse: collapse; margin: 20px 0; }
+        th, td { padding: 12px; text-align: center; border-bottom: 1px solid #ddd; }
+        .order-form { background: #fff; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .order-form input, .order-form select { width: 100%; padding: 8px; margin: 5px 0 15px; border: 1px solid #ddd; border-radius: 4px; }
+        .btn-submit { background: #e44d26; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        footer { background: #333; color: #fff; text-align: center; padding: 20px; margin-top: 30px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <div class="logo">🛒 ***Store</div>
+            <div>Корзина</div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="product.html">Каталог</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Товар</th><th>Цена</th><th>Количество</th><th>Итого</th>
+            </tr>
+            <tr>
+                <td>Товар Pro</td><td>**** ₽</td><td>1</td><td>**** ₽</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align:right"><strong>Общая сумма:</strong></td>
+                <td><strong>**** ₽</strong></td>
+            </tr>
+        </table>
+
+        <div class="order-form">
+            <h3>Оформление заказа</h3>
+            <label>Имя:</label><input type="text" placeholder="Александр Егорович">
+            <label>Телефон:</label><input type="tel" placeholder="+7 (***) ***-**-**">
+            <label>Email:</label><input type="email" placeholder="Sasha@mail.ru">
+            <label>Адрес:</label><input type="text" placeholder="г. Сыктывкар, ул. Примерная, д.1">
+            <label>Способ оплаты:</label>
+            <select>
+                <option>Картой онлайн</option>
+                <option>Наличными при получении</option>
+                <option>Оплата на карту</option>
+            </select>
+            <button class="btn-submit" onclick="alert('Заказ оформлен! Спасибо за покупку')">Оформить заказ</button>
+        </div>
+    </div>
+    <footer><p>&copy; 2026 Store</p></footer>
+</body>
+</html>
